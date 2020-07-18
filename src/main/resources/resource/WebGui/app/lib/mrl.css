@@ -88,9 +88,80 @@ table, th, td {
   padding: 5px;
 }
 */
+
+
 /* custom slider begin */
+/* custom slider begin */
+.custom-slider.rzslider .rz-bar {
+    background: #ffe4d1;
+    height: 2px;
+}
+
+.custom-slider.rzslider .rz-selection {
+    background: #999;
+}
+
+.custom-slider.rzslider .rz-pointer {
+    width: 8px;
+    height: 16px;
+    top: auto;
+    /* to remove the default positioning */
+    bottom: 0;
+    background-color: #999;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.custom-slider.rzslider .rz-pointer:after {
+    display: none;
+}
+
+.custom-slider.rzslider .rz-bubble {
+    bottom: 14px;
+}
+
+.custom-slider.rzslider .rz-limit {
+    font-weight: bold;
+    color: #999;
+}
+
+.custom-slider.rzslider .rz-tick {
+    width: 1px;
+    height: 10px;
+    margin-left: 4px;
+    border-radius: 0;
+    background: #ffe4d1;
+    top: -1px;
+}
+
+.custom-slider.rzslider .rz-tick.rz-selected {
+    background: #999;
+}
+
+.custom-slider.rzslider .rz-pointer:focus {
+  outline: none!important;
+}
 
 
+/* custom slider end */
+
+
+
+/* no */
+/*
+.custom-slider.rzslider .rz-bar {
+  height: 5px;
+}
+.custom-slider.rzslider .rz-selection {
+  background: #9dd2ff;
+}
+
+.custom-slider.rzslider .rz-pointer {
+  background-color: #999;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+*/
 
 
 .sliderContainer{position: relative;/* background-color: aqua; *//* padding-top: 10px; */top: 0px;/* width: calc(100% - 100px); */height: 145px;width: 600px;left: 50px;}
@@ -487,13 +558,8 @@ line-height: 28px !important;
 padding: 2px;
 /* margin-right: 14px; */
 }
-.custom-slider.rzslider .rz-bar {/* background: #ffc6aa; */height: 5px;}
+
 .custom-slider2.rzslider .rz-bar {background: #e0e0e0;height: 18px;}
-
-.custom-slider.rzslider .rz-selection {background: #9dd2ff;}
-
-.custom-slider.rzslider .rz-pointer {/* width: 1px; *//* height: 25px; *//* top: 14px; */
-/* to remove the default positioning *//* bottom: 0px; */background-color: #999;border-top-left-radius: 3px;border-top-right-radius: 3px;}
 
 .lastColumn{
 right: 8px!important;
@@ -512,10 +578,6 @@ position: absolute;
   cursor: ew-resize;
 }
 .custom-slider2.rzslider .rz-pointer:focus {
-outline: none!important;
-}
-
-.custom-slider.rzslider .rz-pointer:focus {
 outline: none!important;
 }
 
@@ -719,11 +781,9 @@ display: none!important;
 
 
 
-.custom-slider.rzslider .rz-tick.rz-selected {
-background: #999;
-}
 
-/* custom slider end */
+
+
 
 .servoReferences{
   font-size: medium;
